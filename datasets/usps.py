@@ -31,7 +31,7 @@ class USPS(data.Dataset):
             E.g, ``transforms.RandomCrop``
     """
 
-    url = "https://raw.githubusercontent.com/mingyuliutw/CoGAN/master/cogan_pytorch/data/uspssample/usps_28x28.pkl"
+    url = "https://github.com/mingyuliutw/CoGAN/blob/master/cogan_pytorch/data/uspssample/usps_28x28.pkl"
 
     def __init__(self, root, train=True, transform=None, download=False):
         """Init USPS dataset."""
