@@ -12,8 +12,8 @@ if __name__ == '__main__':
     # load dataset
     src_data_loader = get_data_loader(params.src_dataset)
     src_data_loader_eval = get_data_loader(params.src_dataset, train=False)
-    tgt_data_loader = get_data_loader(params.tgt_dataset)
-    tgt_data_loader_eval = get_data_loader(params.tgt_dataset, train=False)
+    tgt_data_loader = get_data_loader(params.src_dataset)
+    tgt_data_loader_eval = get_data_loader(params.src_dataset, train=False)
 
     # load models
     src_encoder = init_model(net=LeNetEncoder(),
